@@ -1,0 +1,71 @@
+/*********************************************************************************************/
+******************************INPUT FOR THE TRANSFER MATRIX***********************************
+/*********************************************************************************************/
+-----------------------------------------------------------------------------------------------
+In this input, the parameters of the Flory conformational matrix and protonation are read for all posible combinations of three atoms A-B-C (Maximum 10 different matrices).  
+In the first line the label of the three atoms is expected accounting for the previous bound and the reference bound. The three following lines are reserved for the values of the 3x3 Flory transfer matrix accounting for conformational energy. Finally, in the last line, the values of coulombic interaction between protonated sites when they are in trans, gosh+ and gosh- (respectively) is expected.
+To differentiate the initial and final bounds, set the number of bounds with different transfer matrix in (Number_Begin-End_Transfer_matrix). An extra label is included in the atom label line. If the matrix is of the initial part of the chain, set a "I" label in first place. If the matrix is of the final part of the chain, set a "F" label in the first place. These transfer matrix must be placed at the top of the file. 
+-----------------------------------------------------------------------------------------------
+Number_Final_Chain_Transfer_matrix= 3
+Number_Atoms_With_Final_Chain_Transfer_Matrix= 3
+First_Bound_With_Transfer_Matrix= 1
+-----------------------------------------------------------------------------------------------
+E N C C
+1 3.5729 3.5729
+1 0.029008 0
+1 0 0.029008
+0.0776962395992139 0.00 0.00
+-----------------------------------------------------------------------------------------------
+E C N C 
+1 3.5729 3.5729
+1 0.22224 0
+1 0 0.22224
+0.0776962395992139 0.00 0.00
+-----------------------------------------------------------------------------------------------
+E C C N 
+1 16.65 16.65
+1 1.0357 0
+1 0 1.0357
+0.0776962395992139 0.00 0.00
+-----------------------------------------------------------------------------------------------
+C N C
+1 5.7385 5.7385
+1 0.35694 0
+1 0 0.35694
+0.0219078621716484 0 0
+-----------------------------------------------------------------------------------------------
+N C C 
+1 5.7385 5.7385
+1 0.046591 0
+1 0 0.046591
+0.0219078621716484 0 0
+-----------------------------------------------------------------------------------------------
+C C N
+1 38.40 38.40
+1 2.3885 0
+1 0 2.3885
+0.0219078621716484 0 0
+-----------------------------------------------------------------------------------------------
+X X X
+1 2 3
+4 5 6
+7 8 9
+10 11 12
+-----------------------------------------------------------------------------------------------
+G H I
+1 2 3
+4 5 6
+7 8 9
+10 11 12
+-----------------------------------------------------------------------------------------------
+J K L
+1 2 3
+4 5 6
+7 8 9
+10 11 12
+-----------------------------------------------------------------------------------------------
+Z M N
+1 2 3
+4 5 6
+7 8 9
+10 11 12

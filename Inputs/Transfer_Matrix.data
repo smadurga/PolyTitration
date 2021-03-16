@@ -1,0 +1,71 @@
+/*********************************************************************************************/
+******************************INPUT FOR THE TRANSFER MATRIX***********************************
+/*********************************************************************************************/
+-----------------------------------------------------------------------------------------------
+In this input, the parameters of the Flory conformational matrix and protonation are read for all posible combinations of three atoms A-B-C (Maximum 10 different matrices).  
+In the first line the label of the three atoms is expected accounting for the previous bound and the reference bound. The three following lines are reserved for the values of the 3x3 Flory transfer matrix accounting for conformational energy. Finally, in the last line, the values of coulombic interaction between protonated sites when they are in trans, gosh+ and gosh- (respectively) is expected.
+To differentiate the initial and final bounds, set the number of bounds with different transfer matrix in (Number_Begin-End_Transfer_matrix). An extra label is included in the atom label line. If the matrix is of the initial part of the chain, set a "I" label in first place. If the matrix is of the final part of the chain, set a "F" label in the first place. These transfer matrix must be placed at the top of the file. 
+-----------------------------------------------------------------------------------------------
+Number_Final_Chain_Transfer_matrix= 3
+Number_Atoms_With_Final_Chain_Transfer_Matrix= 3
+First_Bound_With_Transfer_Matrix= 1
+-----------------------------------------------------------------------------------------------
+E O C Q
+1 1 1
+1 1 1
+1 1 1
+1 1 1
+-----------------------------------------------------------------------------------------------
+E C Q N 
+1 1 1
+1 1 1
+1 1 1
+1 1 1
+-----------------------------------------------------------------------------------------------
+E Q N O 
+1 1 1
+1 1 1
+1 1 1
+1 1 1
+-----------------------------------------------------------------------------------------------
+E N O C
+1 1 1
+1 1 1
+1 1 1
+1 1 1
+-----------------------------------------------------------------------------------------------
+O C Q 
+1 1 1
+1 1 1
+1 1 1
+1 1 1 
+-----------------------------------------------------------------------------------------------
+C Q N
+1 1 1
+1 1 1
+1 1 1
+1 1 1
+-----------------------------------------------------------------------------------------------
+Q N O
+1 1 1
+1 1 1
+1 1 1
+1 1 1 
+-----------------------------------------------------------------------------------------------
+N O C
+1 1 1
+1 1 1
+1 1 1
+1 1 1
+-----------------------------------------------------------------------------------------------
+J K L
+1 2 3
+4 5 6
+7 8 9
+10 11 12
+-----------------------------------------------------------------------------------------------
+Z M N
+1 2 3
+4 5 6
+7 8 9
+10 11 12
